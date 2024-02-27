@@ -1,0 +1,73 @@
+.navbar {
+    position: fixed;
+    top: -80px; /* Initially hide the navbar above the viewport */
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    transition: top 0.5s ease; /* Smooth transition for sliding animation */
+}
+
+.navbar.active {
+    top: 0; /* Slide the navbar to the top of the viewport */
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.logo {
+    font-size: 24px; /* Default font size */
+}
+
+@media screen and (max-width: 768px) {
+    /* Adjust styles for tablets */
+    .container {
+        padding: 0 15px; /* Decrease horizontal padding for tablets */
+    }
+    .logo {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+    .nav-links li a {
+        font-size: 14px; /* Decrease font size for smaller screens */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    /* Adjust styles for mobile devices */
+    .container {
+        padding: 0 10px; /* Decrease horizontal padding for mobile */
+    }
+    .logo {
+        font-size: 16px; /* Adjust font size for even smaller screens */
+    }
+    .nav-links li a {
+        font-size: 12px; /* Decrease font size further for even smaller screens */
+    }
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 15px; /* Decrease margin between nav links for smaller screens */
+}
+
+.nav-links li:first-child {
+    margin-left: 0; /* Remove left margin for the first nav link */
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+}
