@@ -1,0 +1,79 @@
+.intro-container {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow items to wrap to the next line on smaller screens */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.intro-text {
+    flex: 1;
+    padding: 0 10px;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.intro-description {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+
+.intro {
+
+
+    font-size: 36px;
+}
+
+.intro-p {
+
+
+    font-size: 26px;
+    color: #fff;
+}
+
+.avatar-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Media query for tablet screens */
+@media screen and (max-width: 768px) {
+    .intro-text {
+        flex: 100%;
+        /* Take up full width on smaller screens */
+        padding: 0;
+        /* Remove padding on smaller screens */
+    }
+}
+
+/* Media query for mobile screens */
+@media screen and (max-width: 480px) {
+    .intro {
+        font-size: 24px;
+        /* Decrease font size for smaller screens */
+    }
+
+    .intro-p {
+        font-size: 18px;
+        /* Decrease font size for smaller screens */
+    }
+}
