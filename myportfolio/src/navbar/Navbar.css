@@ -1,18 +1,16 @@
 .navbar {
-    position: fixed;
-    top: -80px; /* Initially hide the navbar above the viewport */
-    left: 0;
+    position: relative;
     width: 100%;
     background-color: #333;
     color: #fff;
     padding: 20px 0;
-    transition: top 0.5s ease; /* Smooth transition for sliding animation */
+    transition: transform 0.5s ease; /* Smooth transition for sliding animation */
+    transform: translateY(-100%); /* Initially hide the navbar above the viewport */
 }
 
 .navbar.active {
-    top: 0; /* Slide the navbar to the top of the viewport */
+    transform: translateY(0); /* Slide the navbar to the top of the viewport */
 }
-
 .container {
     display: flex;
     align-items: center;

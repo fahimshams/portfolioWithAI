@@ -1,5 +1,5 @@
 .intro-container {
-    margin-top: 100px;
+    
     display: flex;
     flex-wrap: wrap;
     /* Allow items to wrap to the next line on smaller screens */
@@ -7,6 +7,7 @@
     align-items: center;
     padding: 0 10px;
     text-align: center;
+    background-color: black;
     color: #fff;
 }
 
@@ -16,6 +17,7 @@
     text-align: center;
     opacity: 0;
     animation: fadeIn 1s ease forwards;
+    
 }
 
 @keyframes fadeIn {
@@ -49,10 +51,12 @@
     color: #fff;
 }
 
-.avatar-container {
+.image-container {
     flex: 1;
     display: flex;
-    justify-content: flex-end;
+    
+    justify-content:center;
+    animation: fadeIn 1s ease forwards;
 }
 
 /* Media query for tablet screens */
@@ -76,4 +80,14 @@
         font-size: 18px;
         /* Decrease font size for smaller screens */
     }
+}
+
+.icon-container {
+    display: inline-flex;
+    gap: 20px; /* Adjust the spacing between icons */
+}
+
+.social-icons{
+
+    font-size: 15px;
 }
